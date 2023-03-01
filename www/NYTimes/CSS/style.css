@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0 auto;
+}
+
+
+
+.header {
+    display: flex;
+}
+
+.top.header, .middle.header, .bottom.header {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    border: 1px solid;
+}
+
+.top-left, .top-mid, .top-right {
+    flex: 1;
+    width: 33.333333%;
+    border: 1px solid;
+}
+
+
+.middle-left, .middle-mid, .middle-right {
+    flex: 1;
+    width: 33.333333%;
+    border: 1px solid;
+}
+
+nav {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.article-container {
+    display: flex;
+    width: 100%;
+    border: 1px solid;
+}
+
+.left-art {
+    display: flex;;
+    flex: 2;
+    border: 1px solid;
+}
+
+.right-art {
+    display: flex;
+    flex: 1;
+    border: 1px solid;
+    flex-direction: column;
+}
+
+
+.left-art {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+}
+
+.topleft-art {
+    flex: 1.5;
+    border: 1px solid;
+    display: flex;
+}
+
+
+.bottomleft-art {
+    flex: 1;
+    display: flex;
+}
+
+.ukraine-container {
+    flex: 1;
+    display: flex;
+    border: 1px solid;
+    flex-direction: column;
+}
+
+.ukraine-spotlight {
+    flex: 2;
+}
+
+.Ukraine-article {
+    flex: 1;
+    border: 1px solid;
+}
+
+.tech-container {
+    flex: 1;
+    display: flex;
+    border: 1px solid;
+    flex-direction: column;
+}
+
+.tech-spotlight {
+    flex: 2;
+}
+
+.tech-article {
+    flex: 1;
+    border: 1px solid;
+}
+
+
+.righttop-art {
+    flex: 2;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rightbottom-art {
+    flex: 1;
+    display: flex;
+}
+
+.culture-articles-top {
+    flex: 2;
+    border: 1px solid;
+}
+
+.culture-articles-bottom {
+    flex: 1;
+    display: flex;
+}
+
+.culture-articles {
+    flex: 1;
+    border: 1px solid;
+}
+
+.rightbottom-art {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.opinion-articles {
+    flex: 1;
+    border: 1px solid;
+}
+
+
+@media screen and (max-width: 767px) {
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.left-art {
+    width: 100%;
+
+}
+
+.right-art {
+    flex: 1;
+
+}
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-art {
+   width: 100%;
+}
+
+.right-art {
+    flex: 1;
+
+}
+
+}
