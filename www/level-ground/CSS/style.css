@@ -1,0 +1,196 @@
+
+*{ 
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+button {
+    background: transparent;
+    border: 1.5px solid grey;
+    border-radius: 3px;
+    height: 45px;
+    width: 110px;
+    font-size: .7em;
+    font-weight: 600;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: .8em;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+
+
+header {
+    display: flex;
+    background: #66768a;
+}
+
+nav a {
+    padding: 0px 5px;
+    
+}
+nav {
+    flex: 1.5;
+    text-align: left;
+    padding: 20px 40px;
+}
+
+.title {
+    flex: .3;
+}
+
+.title-image {
+    padding-top: 4%;
+    width: 60%;
+}
+
+.donate {
+    flex: 1.5;
+    padding: 20px 40px;
+    text-align: right;
+}
+
+.donate-button {
+    color:  #66768a;
+    background: white;
+    border-radius: 5px;
+    font-weight: 700;
+    width: 60px;
+}
+
+
+
+header, .container, footer {
+    width: 100%;
+
+    
+
+}
+
+
+main {
+    background: #66768a;
+    color: white;
+}
+
+main h1 {
+    font-size: 2.7em;
+    padding: 50px 0;
+}
+main p {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+    font-weight: 600;
+}
+.watch {
+    font-weight: 300;
+}
+
+.watch i {
+    padding: 0 6px;
+}
+
+.big-image {
+    padding-top: 40px;
+    font-size: .7em;
+    font-style: italic;
+    color: rgb(34, 34, 34);
+}
+
+
+
+.why {
+    padding: 60px 0 80px 0;
+}
+
+.why p, .volunteer p {
+    width: 40%;
+    margin: 0 auto;
+    font-size: .9em;
+}
+
+
+
+
+
+
+.gym-visit {
+    display: flex;
+    background: #dbdfe2;
+    padding: 60px 200px;
+}
+
+.gym {
+    flex: 1;
+}
+.gym p, .visit p {
+    width: 90%;
+    margin: 5px auto;
+    font-size: .7em;
+    padding-bottom: 30px;
+}
+
+.visit {
+    flex: 1;
+}
+
+div {
+    height: 120px;
+    width: 200px;
+    background: #66768a;
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+.volunteer {
+    padding: 80px 0;
+}
+
+.volunteer p {
+    padding-bottom: 30px;
+    font-weight: 600;
+    color: #6a6e74;
+}
+
+
+footer {
+    display: flex;
+    background: #161f2a;
+}
+
+.foot-socials {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+.social-icons {
+    flex: 1;
+}
+
+.foot-crdit {
+    flex: 1;
+}
