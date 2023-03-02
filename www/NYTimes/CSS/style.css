@@ -5,12 +5,14 @@
 
 body {
     margin: 0 auto;
+    width: 70%;
 }
 
 
 
 .header {
     display: flex;
+    width: 100%;
 }
 
 .top.header, .middle.header, .bottom.header {
@@ -26,11 +28,27 @@ body {
     border: 1px solid;
 }
 
+.top-mid {
+    text-align: center;
+}
+
+.top-right {
+    text-align: right;
+}
+
 
 .middle-left, .middle-mid, .middle-right {
     flex: 1;
     width: 33.333333%;
     border: 1px solid;
+}
+
+.middle-mid {
+    text-align: center;
+}
+
+.middle-right {
+    text-align: right;
 }
 
 nav {
@@ -117,6 +135,16 @@ nav {
 
 }
 
+.culture-image {
+    width: 100%;
+    padding: 0 5%;
+}
+
+.think {
+    width: 100%;
+    padding: 5%;
+}
+
 .rightbottom-art {
     flex: 1;
     display: flex;
@@ -148,8 +176,77 @@ nav {
     border: 1px solid;
 }
 
+.left-images {
+    width: 100%;
+    padding: 0 5%;
+}
 
-@media screen and (max-width: 767px) {
+
+@media (max-width: 500px) {
+
+    body {
+        width: 100%;
+    }
+    
+
+    .article-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .left-art {
+        width: 100%;
+    
+    }
+    
+    .right-art {
+        flex: 1;
+    
+    }
+
+    
+    .topleft-art {
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ukraine-container {
+        flex: 1;
+        order: 2;
+    }
+    
+    .ukraine-spotlight {
+        flex: 1;
+        order: 1;
+    }
+
+
+
+
+    .bottomleft-art {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tech-container {
+        flex: 1;
+        order: 2;
+    }
+    
+    .tech-spotlight {
+        flex: 1;
+        order: 1;
+    }
+
+
+
+}
+
+
+
+@media (max-width: 881px) {
 
 .article-container {
     display: flex;
@@ -167,23 +264,18 @@ nav {
 
 }
 
+.left-images {
+    width: 100%;
+    padding: 25% 5%;
+}
+
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1184px) {
 
-.article-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.left-art {
-   width: 100%;
-}
-
-.right-art {
-    flex: 1;
-
-}
+body {
+        width: 100%;
+    }
 
 }

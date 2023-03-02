@@ -1,0 +1,180 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    height: 45px;
+    width: 140px;
+    border: 0px;
+    background: rgb(68, 68, 68);
+    color: white;
+}
+
+button > a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#query {
+    height: 45px;
+    width: 240px;
+}
+
+.search {
+    height: 45px;
+    width: 45px;
+    background: white;
+    border: 1px solid gray;
+    color: gray;
+}
+
+.hr-break {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    text-align: center;
+    background: rgb(22, 83, 22);
+    color: white;
+}
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+img {
+    flex: 1;
+}
+
+.header-left {
+    display: flex;
+    flex: 1;
+    border: 1px solid;
+}
+
+.header-links {
+    flex: 1;
+    border: 1px solid;
+
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid;
+}
+
+.social-icons {
+    flex: 1;
+    text-align: right;
+    
+}
+
+.social-icons a {
+    background: rgb(228, 228, 228);
+    color: grey;
+    margin: 5px;
+}
+
+.social-icons i {
+    width: 30px;
+    padding: 10px 10px;
+    font-size: 1em;
+    
+}
+
+
+
+.buttons {
+    flex: 1;
+    display: flex;
+    text-align: right;
+
+}
+
+
+
+
+.content-container {
+    display: flex;
+    flex: 1;
+}
+
+.stories-container {
+    display: flex;
+    border: 1px solid;
+    flex: 2;
+}
+
+.watch-now {
+    flex: 1.7;
+    padding: 0 0 0 50px;
+}
+
+.main-image {
+    width: 98%;
+}
+
+.featured {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-container {
+    flex: 1;
+    display: flex;
+}
+
+.info {
+    flex: 2;
+    margin: 0;
+}
+
+.featured-image {
+    flex: .7;
+    border: 1px solid;
+    padding: 5px 0;
+}
+
+
+.subscription {
+    display: flex;
+    flex: .5;
+    border: 1px solid;
+    flex-direction: column;
+}
+
+.tips {
+    flex: .8;
+    border: 1px solid;
+}
+
+
+.sub-list {
+    flex: 2;
+    border: 1px solid;
+}
+
+ul {
+    list-style: none;
+}
+
+.tabs {
+    width: 100%;
+    flex: none;
+}
