@@ -1,5 +1,7 @@
 
 
+/* themes */
+
 * {
     box-sizing: border-box;
 }
@@ -50,6 +52,11 @@ a {
     color: white;
 }
 
+
+
+
+
+/* Header */
 header {
     display: flex;
     width: 100%;
@@ -97,8 +104,6 @@ img {
     
 }
 
-
-
 .buttons {
     flex: 1;
     display: flex;
@@ -106,11 +111,20 @@ img {
 }
 
 
+.hamburger {
+    display: none;
+}
+
+
+
+/* web body */
 .content-container {
     display: flex;
     flex: 1;
 }
 
+
+/* Main & Featured Stories */
 .stories-container {
     display: flex;
     border: 1px solid;
@@ -149,13 +163,9 @@ img {
 }
 
 
-.subscription {
-    display: flex;
-    flex: .5;
-    border: 1px solid;
-    flex-direction: column;
-}
 
+
+/* Right Tips & Subscription */
 .tips {
     flex: .8;
     border: 1px solid;
@@ -188,62 +198,91 @@ ul {
     width: 100%;
     flex: none;
 }
-
-
-
-
-@media (max-width: 500px) {
-
+.subscription-container {
+    border: 1px solid;
+    flex: .8;
 
 }
 
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+
+    .content-container {
+        flex-direction: column;
+    }
+
+
+    .stories-container {
+        flex-direction: column;
+
+    }
+    .featured-container {
+        flex-direction: column;
+    
+    }
+    .header-links {
+        display: none;
+    }
+
+
+}
 
 
 @media (max-width: 881px) {
 
 
     .stories-container {
-        display: flex;
         flex-direction: column;
-        border: 1px solid;
-        flex: 2;
-    }
-    
-    .watch-now {
-        flex: 1.7;
-        padding: 0 0 0 50px;
+        flex: 2.5;
     }
 
-    .featured {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
+    .header-links {
+        display: none;
+    }
+
+    .social {
+        display: none;
     }
 
 }
 
+
 @media (max-width: 1184px) {
+    .header-links {
+        display: none;
+    }
+
+    .social {
+        flex: 1.8;
+    }
+
+    .hamburger {
+        display: inline-block;
+        text-align: center;
+        padding-top: 35px;
+        flex: .5;
+        font-size: 3em;
+        order: 2;
+    }
 
     .stories-container {
-        display: flex;
         flex-direction: column;
-        border: 1px solid;
-        flex: 2;
         
     }
 
     .info {
         flex: 1;
-        margin: 0;
     }
-    
+
     .featured-image {
         display: flex;
-        flex: .7;
-        border: 1px solid;
         padding: 2% 3%;
         justify-content: center;
     }
+
+
 
 }
 
