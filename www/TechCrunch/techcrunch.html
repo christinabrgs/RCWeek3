@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/47aae21c46.js" crossorigin="anonymous"></script>
+
 </head>
 
 
@@ -21,15 +23,15 @@
 
         <section class="header-links">
             <p class="gotatip"> 
-                Got a tip? Let us know
+                Got a tip? <span>Let us know.</span>
             </p>
         
 
             <nav>
-                <a href="">News</a>
-                <a href="">Videos</a>
-                <a href="">Events</a>
-                <a href="">Crunchbase</a>
+                <a href="">News <i class="fa-solid fa-caret-down"></i></a>
+                <a href="">Videos <i class="fa-solid fa-caret-down"></i></a>
+                <a href="">Events <i class="fa-solid fa-caret-down"></i></a>
+                <a href="">Crunchbase </a> 
             </nav>
         </section>
 
@@ -44,9 +46,9 @@
             <section class="social-icons">
  
 
-            <span>
+            <p>
                 Follow Us
-            </span>
+            </p>
 
             <a href=""> 
                 <i class="fa-brands fa-facebook-f"></i>
@@ -92,19 +94,27 @@
     </header>
 
 
-    <!-- Headline Break -->
+    <!-- Headline Break & smaller break -->
     <section class="hr-break">
         <p>
-            10th Annual Crunchies Brooklyn 99 Star Chelsea Peretti To Host The Crunchies This February Get Your Tickets Today
+            <span class="annual"> 10th ANNUAL CRUNCHIES</span> Brooklyn 99 Star Chelsea Peretti To Host The Crunchies This February <span class="tickets">Get Your Tickets Today</span> <i class="fa-solid fa-caret-right"></i>
         </p>
     </section>
+
+    <section class="hr-break two">
+        <p>
+            <span class="annual"> 10th ANNUAL CRUNCHIES</span> <i class="fa-solid fa-caret-right"></i>
+        </p>
+    </section>
+
+
 
     <section class="content-container">
     <!-- WatchNow & Featured Stories -->
     <section class="stories-container">
         <section class="watch-now">
             <h2>
-                Watch Now Crunch Report
+                WATCH NOW <span>Crunch Report</span>
             </h2>
             <img class="main-image" src="images/main.png" alt="">
             <p>
@@ -126,7 +136,7 @@
                     <h4>
                         Facebook previews Journalism Project features
                     </h4>
-                    By Josh Consrine
+                    <p> By Josh Consrine </p>
                 </section>
             </section>
 
@@ -138,7 +148,7 @@
                     <h4>
                         Crunchbase analyzes 2016 to predict future
                     </h4>    
-                    By Connie Loizos
+                   <p> By Connie Loizos</p>
                 </section>
             </section>
 
@@ -150,7 +160,7 @@
                     <h4>
                         Instagram Stories launches skippable ads
                     </h4>
-                    By Josh Constine
+                    <p> By Josh Constine </p>
                 </section>
             </section>
 
@@ -162,7 +172,7 @@
                  <h4>
                     Memos claim Trump's lawyer helper Russia
                 </h4>
-                    By Kater Conger, Devin Coldewey
+                    <p>By Kater Conger, Devin Coldewey</p>
                 </section>
             </section>
         </section>
@@ -172,13 +182,13 @@
     <!-- Tip? & Subscription-->
     <section class="subscription-container">
         <section class="tips">
-        <br>
+        <hr>
 
         <h1>
-            Have a tip, pitch or guest column? Send us a tip.
+            Have a tip, pitch or guest column? <span>Send us a tip.</span>
         </h1>
 
-        <br>
+        <hr>
         </section>
 
         <section class="sub-list">
@@ -186,9 +196,9 @@
             <ul>
             <form onsubmit="" method="" action="">
 
-                <li>
+                <li class="li-head">
                     <h3>
-                        Newsletter Supscription
+                        NEWSLETTER SUBSCRIPTION
                     </h3>
                 </li>
 
@@ -211,19 +221,18 @@
                 </label>
                 <p> latest startup funding announcements</p>
                </li>
-               <li>
-                <input class="subscribe-input" type="Email" name="subscribe" value="Submit"/>
+               <li class="li-form">
+                <input class="subscribe-input" type="Email" name="subscribe" value="Enter your email"/>
                 <button class="subscribe-button" type="Enter you email">
                     Subscribe
                 </button>
                 </form>
                 </li>
 
-                <li>
-                                
-            <span>
-                See all Newsletters >>
-            </span>
+                <li class="see-all">                    
+                    <p>
+                        SEE ALL NEWSLETTERS >>
+                    </p>
                 </li>
             </ul>
 
