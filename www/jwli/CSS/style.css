@@ -13,33 +13,139 @@ body {
     flex-direction: column;
 }
 
-header {
-    width: 100%;
-    padding: 2% 0;
-    border: 1px solid;
+
+h1 {
+    font-size: 2.2em;
+    font-weight: 500;
+    color:  #535961;
+    width: 69%;
+    margin: 10px auto;
+    padding-left: 2%;
 }
 
-nav a {
-    padding: 0 5%;
-    text-decoration: none;
-    color: black;
-    border: 1px solid;
+h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #535961;
 }
 
 .container, main {
     width: 100%;
-    border: 1px solid;
     display: flex;
     flex: 1;
 }
 
+hr {
+    border: 3px solid rgb(255, 206, 214);
+    width: 50%;
+    text-align: left;
+    margin-left: 3%;
+}
+
+span {
+    font-weight: 700;
+}
+
+
+
+/* Header */
+
+header {
+    width: 100%;
+    padding: 2% 0;
+}
+
+nav a {
+    padding: 0 4.4%;
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.apply {
+    background: #333942;
+    color: white;
+    height: 50px;
+    width: 170px;
+    border: 0;
+    font-size: 1.2em;
+}
+
+.apply a {
+    color: white;
+}
+
+header i.fa-solid.fa-bars {
+    display: none;
+}
+
+
+
 /* Main Section */
+
+main {
+    background:  #f1f3f5;
+}
+
+
 .headline {
     flex: 1;
+    text-align: center;
+    padding: 80px 0 0 0;
+    color: #535961;
+    text-align: left;
+}
+
+.headline h1 + p {
+    font-size: 1.5em;
+    font-weight: 600;
+    width: 65%;
+    margin: 0 auto;
+    padding: 20px 0px 80px 0;
+}
+
+
+.title-picture {
+    width: 65%;
+    padding: 0 0 0 25%;
 }
 
 .main-image {
-    flex: 1;
+    flex: .7;
+}
+
+
+ .email-form {
+    font-weight: 600;
+    font-size: 1.1em;
+    width: 68%;
+    margin: 0 auto;
+}
+
+.subscribe-input {
+    background: white;
+    border: 2.5px solid #b0b8be;
+    border-radius: 5px;
+    height: 60px;
+    width: 350px;
+    padding-left: 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #b8c5cf;
+}
+
+.subscribe-button {
+    height: 60px;
+    width: 125px;
+    background: #b8c5cf;
+    border-radius: 6px;
+    border: 2.5px solid #b0b8be;
 }
 
 
@@ -49,39 +155,62 @@ nav a {
 }
 
 .selling-header {
-    
+    width: 60%;
+    margin: 0 auto;
     flex: 1;
+    text-align: center;
+    padding: 50px 0;
 }
 
 .points-style {
     display: flex;
     flex: 1;
+    padding: 0 20%;
 }
 
 .point-text {
     flex: 1;
+    padding: 0 4% 0 6%;
 }
 .fact {
     flex: 1;
+    padding: 3% 22% 5% 22%;
+    text-align: center;
+    font-size: 1.2em;
+    color: grey;
+    font-style: italic;
 }
 
 
+/* History Section */
 
+.history {
+    background:  #f1f3f5;
+    width: 95%;
+    margin: 0 auto;
+}
 .history-text {
     flex: 1;
+    padding: 5%;
 }
 
 .picture-container {
     display: flex;
     flex-direction: column;
-    flex: .7;
+    flex: .6;
+    padding: 10% 0 10% 0;
+
 }
 
 .history-picture {
     flex: 1;
+    width: 95%;
+    margin: 0 auto:
 }
 
-
+.history-img {
+    width: 80%;
+}
 
 
 
@@ -92,30 +221,52 @@ nav a {
 
 .who-we-are {
     flex-direction: column;
+    width: 87%;
+    margin: 0 auto;
+}
+
+.who-we-are > h2 {
+    text-align: center;
+    padding: 50px 0;
 }
 
 .bio {
     flex: 1;
     display: flex;
+    border: 2px solid #f1f3f5;
+    padding: 50px 9% 50px 9%;
 }
 
 .self-picture {
     flex: .7;
+    padding: 60px 10px 10px 10px;
 }
 
-.about-text {
+.founder-text {
     flex: 1;
+    padding: 0px;
 }
 
+.about {
+    padding: 50px 0;
+}
 
+.fish h3 {
+    font-size: 2em;
+    font-weight: 500;
+    color: #91999e;
+}
 
-
+.foundation {
+    padding: 0 2%;
+}
 
 
 
 /* Footer Break & Subscribe */
 .footer-break {
     text-align: center;
+    background: #b8c5d0;
 }
 
 .newsletter {
@@ -127,12 +278,13 @@ nav a {
 }
 
 
+/* Footer */
+
 footer {
     width: 100%;
-    height: 100px;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
+    background:  #8f9ca3;
 }
 footer p {
     width: 40%;
@@ -158,6 +310,210 @@ nav {
 }
 
 .more-links a {
-    padding: 0px 40px;;
+    padding: 0px 40px;
     text-decoration: none;
+}
+
+
+.footer-break {
+    color: white;
+    font-size: 1.5em;
+}
+
+.footer-break h3 {
+    font-weight: 400;
+}
+
+.footer-break button {
+    color: white;
+    font-weight: 500;
+    font-size: 1.3em;
+    background: #91999e;
+
+}
+
+.email-form {
+    padding: 15px 60px 0 0;
+}
+
+.foot-top {
+    padding: 50px 10%;
+    color: white;
+}
+
+.foot-top p, .foot-top a {
+    color: white;
+}
+
+.foot-top p {
+ padding: 0 40px 0 0;
+}
+
+footer hr {
+    width: 80%;
+    border: 1px solid white;
+    margin: 10px auto;
+}
+
+.foot-bottom {
+    padding: 50px 10%;
+    color: white;
+}
+
+.foot-bottom a {
+    color: white;
+    
+}
+
+
+table {
+    text-align: left;
+    width: 500px;
+    
+}
+
+
+@media (max-width: 500px) {
+
+
+
+}
+
+
+@media (max-width: 760px) {
+
+
+
+    header i.fa-solid.fa-bars {
+        display: inline-block;
+        font-size: 5em;
+        margin: 15% auto;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .headline h1 + p {
+
+    padding: 20px 0px 40px 0;
+    }
+
+    .who-we-are {
+        display: none;
+    }
+    .history {
+        display: none;
+    }
+
+    .foot-bottom {
+        display: none;
+    }
+
+    .point-text {
+        flex: 1;
+        padding: 0 4% 0 0%;
+    }
+}
+
+@media (max-width: 1230px) {
+
+    header i.fa-solid.fa-bars {
+        display: inline-block;
+        font-size: 5em;
+        margin: 10% auto;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .headline {
+        text-align: center;
+    }
+
+    .title-picture {
+        width: 80%;
+        padding: 0 10% 0 10%;
+    }
+
+    .main-image {
+        display: none;
+    }
+
+    .footer-break {
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .subscribe-input {
+        width: 60%;
+    }
+    
+    .subscribe-button {
+        width: 120px;
+    }
+
+    .bio {
+
+        flex-direction: column;
+        }
+        
+    .self-picture {
+            margin: 0 auto;
+        }
+
+    main .email-form {
+        width: 100%;
+    }
+
+    main .subscribe-input {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 1580px) {
+
+
+    .apply {
+        background: #333942;
+        color: white;
+        margin: 20px auto;
+    }
+
+
+    .history {
+        display: none;
+    }
+
+    .footer-break {
+        padding-bottom: 50px;
+    }
+
+
+    .subscribe-input {
+            width: 50%;
+            padding-left: 30px;
+        }
+        
+    .subscribe-button {
+            width: 120px;
+            }
+            
+    main .email-form {
+                width: 100%;
+                padding: 30px;
+            }
+        
+    main .subscribe-input {
+                width: 70%;
+            }
+
+    main .subscribe-button {
+            width: 100px;
+            }
+    }
+
+
 }
