@@ -5,6 +5,7 @@
 body {
     margin: 0 auto;
     width: 90%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .body-content {
@@ -28,11 +29,135 @@ nav a {
 .container, main {
     width: 100%;
     border: 1px solid;
+    display: flex;
     flex: 1;
 }
+
+/* Main Section */
+.headline {
+    flex: 1;
+}
+
+.main-image {
+    flex: 1;
+}
+
+
+/* Selling Point Section */
+.selling-points {
+    flex-direction: column;
+}
+
+.selling-header {
+    
+    flex: 1;
+}
+
+.points-style {
+    display: flex;
+    flex: 1;
+}
+
+.point-text {
+    flex: 1;
+}
+.fact {
+    flex: 1;
+}
+
+
+
+.history-text {
+    flex: 1;
+}
+
+.picture-container {
+    display: flex;
+    flex-direction: column;
+    flex: .7;
+}
+
+.history-picture {
+    flex: 1;
+}
+
+
+
+
+
+
+
+/* Who We Are Section */
+
+
+.who-we-are {
+    flex-direction: column;
+}
+
+.bio {
+    flex: 1;
+    display: flex;
+}
+
+.self-picture {
+    flex: .7;
+}
+
+.about-text {
+    flex: 1;
+}
+
+
+
+
+
+
+
+/* Footer Break & Subscribe */
+.footer-break {
+    text-align: center;
+}
+
+.newsletter {
+    flex: 1;
+}
+
+.email-form {
+    flex: 1;
+}
+
 
 footer {
     width: 100%;
     height: 100px;
     border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+footer p {
+    width: 40%;
+    display: inline;
+}
+
+nav {
+    display: inline;
+}
+
+.foot-bottom {
+    flex: 1;
+    display: flex;
+}
+
+.table {
+    flex: 1;
+}
+
+.more-links {
+    flex: 1;
+    text-align: center;
+}
+
+.more-links a {
+    padding: 0px 40px;;
+    text-decoration: none;
 }

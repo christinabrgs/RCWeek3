@@ -132,11 +132,12 @@ main p {
 
 
 
+/* Gym and Visiting Section */
 
 .gym-visit {
     display: flex;
     background: #dbdfe2;
-    padding: 60px 200px;
+    padding: 60px 25%;
 }
 
 .gym {
@@ -163,6 +164,8 @@ div {
 
 
 
+
+/* Volunteer Section */
 .volunteer {
     padding: 80px 0;
 }
@@ -174,23 +177,168 @@ div {
 }
 
 
+
+
+
+/* footer */
+
 footer {
     display: flex;
     background: #161f2a;
+    color: white;    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.foot-container {
+    display: flex;
+    flex: 1;
+
 }
 
 .foot-socials {
     display: flex;
     flex-direction: column;
-
-
+    flex: 1;
+    text-align: left;
+    padding: 3%;
+    line-height: 100%;
 }
-
-
 .social-icons {
     flex: 1;
 }
 
-.foot-crdit {
+.social-icon i {
+    padding: 0 5px;
+}
+
+.contribute {
+    font-size: .9em;
+}
+
+.contribute.style h4 , .site-map.style h4 {
+    font-size: .7em;
+    color: #66768a;
+}
+
+.foot-credit {
+    flex: .2;
+    text-align: left;
+    padding: 3%;
+}
+
+.foot-credit p, .foot-credit h4 {
+    font-size: .8em;
+}
+
+.foot-credit h4 {
+    font-weight: 700;
+}
+
+.email {
+    font-weight: 600;
+}
+
+hr {
+    color: white;
+    border: 1px solid;
+    height: 0;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.level-ground {
+    display: flex;
     flex: 1;
+    padding-top: 20px;
+}
+
+.level-right {
+    flex: .5;
+}
+
+.level-left {
+    flex: 3;
+    text-align: left;
+    padding-left: 3%;
+}
+
+.foot-image {
+    display: inline;
+    width: 30%;
+}
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    main h1 {
+        font-size: 2em;
+        padding: 50px 10px;
+    }
+
+     .foot-container {
+        flex-direction: column;
+        padding-top: 30px;
+
+    }
+
+    .foot-credit {
+        text-align: center;
+    }
+
+    .level-left {
+        text-align: center;
+    }
+
+
+
+    .level-right {
+        display: none;
+    }
+
+    .foot-socials {
+        text-align: center;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+
+    .gym-visit {
+        flex-direction: column;
+    }
+    
+    .gym {
+        flex: 1;
+    }
+
+    .visit {
+        flex: 1;
+        padding: 20px 0;
+    }
+    .title-image {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .gym-visit {
+        padding: 60px 15%;
+    }
+
+    .title-image {
+        padding-top: 4%;
+        width: 90%;
+    }
+    
+
 }
